@@ -1,0 +1,58 @@
+html {
+  position: relative;
+  min-height: 100%;
+  font-family: $montserrat !important;
+}
+
+main {
+  &.container {
+    padding-top: 163px;
+  }
+}
+
+.navbar {
+  padding: 2rem 2rem;
+}
+
+.navbar-light .navbar-nav .active {
+  > .nav-link {
+    color: red;
+  }
+}
+
+.navbar-toggler {
+  padding: 0 !important;
+}
+
+.bg-light {
+  background-color: rgba(248, 249, 250, 0.9) !important;
+}
+
+.h5 {
+  font-weight: 900;
+}
+
+.btn {
+  border-radius: 0 !important;
+}
+
+.btn-outline-danger {
+  color: black;
+}
+
+.btn-link {
+  color: black;
+  &:hover {
+    color: black;
+  }
+}
+
+.col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4 {
+  padding-left: 4px;
+  padding-right: 4px;
+
+  .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}

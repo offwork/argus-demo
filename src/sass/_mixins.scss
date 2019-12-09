@@ -1,0 +1,18 @@
+@mixin text-border($top, $right, $bottom, $left) {
+  border: solid 1px rgb(255, 0, 0);
+  position: relative;
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+@mixin hide-border($w, $h, $top, $left, $right) {
+  background-color: white;
+  width: $w;
+  height: $h;
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+}

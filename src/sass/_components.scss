@@ -1,0 +1,292 @@
+@import "fonts";
+@import "mixins";
+
+
+/* Argus Logo */
+.logo-top {
+
+  &.navbar-brand {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: auto;
+      height: 2.5rem;
+    }
+
+    p {
+      font-size: small;
+      margin-left: 1rem;
+      margin-bottom: 0;
+      font-weight: lighter !important;
+    }
+  }
+}
+
+/* Media Partner Logo */
+.medya-partner {
+
+  &.mt-2 {
+    img {
+      width: auto;
+      height: 2.5rem;
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: small;
+    }
+
+    .icon-groups {
+      margin: 0 auto;
+    }
+  }
+
+  .footer-mobile {
+    display: block;
+    line-height: 30px !important;
+
+    .footer-medya-partner {
+
+      img {
+        width: auto;
+        height: 1.75rem;
+      }
+
+    }
+
+    span {
+      font-size: small;
+      font-weight: lighter;
+    }
+  }
+
+  /* icons */
+  .close {
+    img {
+      width: auto;
+      height: 1.75rem;
+    }
+  }
+}
+
+.modelling-text-border {
+  @include text-border(8px, 8px, 24px, 12px);
+
+  h4 {
+    position: relative;
+    z-index: 2;
+  }
+
+  p {
+    position: relative;
+    z-index: 2;
+  }
+
+  > .edges-hide {
+    @include hide-border(310px, 110px, -1px, -1px, unset);
+  }
+
+  > .edges-hide-mobile {
+    @include hide-border(280px, 110px, -1px, -1px, unset);
+  }
+}
+
+.arrow-pic {
+  position: relative;
+
+  > img {
+    position: absolute;
+    transform: scaleX(-1) rotate(-12deg);
+    right: -8px;
+    top: 12px;
+    z-index: 2;
+  }
+  .arrow-hide {
+    @include hide-border(62px, 65px, unset, unset, 50px);
+  }
+}
+
+.section-title {
+  > img {
+    height: 5rem;
+    width: auto;
+  }
+}
+
+.col-sm {
+  > img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.content-pic {
+  max-width: 100%;
+  height: auto;
+}
+
+.render-logos {
+
+  .d-flex {
+    > img {
+      width: 52px;
+      height: auto;
+      border-right: lightgrey solid 1px;
+    }
+  }
+
+  .max-paragraph {
+    width: 300px;
+  }
+
+  .paragraph-pic {
+    width: 80px;
+    height: auto;
+    margin-top: -5px;
+  }
+}
+
+.gift-card-column {
+  position: relative;
+
+  .mobile-gift-arrow {
+    position: absolute;
+    top: 44px;
+    right: -40px;
+    width: 100px;
+    transform: scaleX(-1) rotate(110deg);
+  }
+
+  .mobile-gift-card {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.gift-card {
+  display: flex;
+  align-items: center;
+}
+
+.connvering-content {
+  position: relative;
+
+  .convering-arrow {
+    position: absolute;
+    transform: rotate(-15deg);
+    width: 120px;
+    height: auto;
+  }
+
+  .argus-label {
+    padding: 8px;
+    background-color: rgba(57, 57, 58, 0.89);
+    transform: rotate(-90deg);
+    font-weight: 300;
+    font-size: small;
+    right: -81px;
+    color: white;
+    position: absolute;
+  }
+}
+
+
+/* Animatic Section */
+.animatic-left {
+  position: relative;
+  
+  .animatic-book {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 48px;
+
+    > img {
+      max-width: 85%;
+      height: auto;
+      box-shadow: 0px 9px 7px rgba(131, 131, 133, 0.555);
+    }
+  }
+
+  .animatic-arrow {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    transform: scaleX(-1) rotate(180deg);
+    right: 0;
+    top: 234px;
+  }
+
+  .animatic-arrow-mobile {
+    position: absolute;
+    width: 78px;
+    height: auto;
+    transform: scaleX(-1) rotate(140deg);
+    right: 78px;
+    top: 215px;
+  }
+
+}
+
+.animatic-text-border {
+
+  @include text-border(8px, 12px, unset, 12px);
+
+  p {
+    position: relative;
+    z-index: 2;
+  }
+
+  > .edges-hide {
+    @include hide-border(360px, 114px, 71px, -1px, unset);
+  }
+}
+
+.animatic-text-border-mobile {
+
+  @include text-border(8px, 12px, unset, 12px);
+
+  p {
+    position: relative;
+    z-index: 2;
+  }
+
+  > .edges-hide-mobile {
+    background-color: white;
+    width: 200px;
+    height: 110px;
+    position: absolute;
+    top: 99px;
+    left: -1px;
+  }
+}
+
+.animatic-right {
+  position: relative;
+
+  .animatic-right-arrow {
+    position: absolute;
+    top: 456px;
+    left: -53px;
+    transform: scaleX(-1) rotate(28deg);
+  }
+
+  .animatic-right-arrow-mobile {
+    position: absolute;
+    width: 78px;
+    top: 245px;
+    left: -35px;
+    transform: rotate(97deg);
+  }
+}
