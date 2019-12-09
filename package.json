@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "homepage": "https://github.com/offwork/argus-demo",
   "scripts": {
     "build": "parcel build src/index.html --public-url ./",
     "serve": "parcel src/index.html --open -p 4444",
-    "watch": "parcel watch src/index.html --public-url ./"
+    "watch": "parcel watch src/index.html --public-url ./",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "autoprefixer": "^9.7.3",
