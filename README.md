@@ -1,6 +1,6 @@
 # Argus Demo
 
-[DEMO](https://offwork.github.io/omdb-demo/list)
+[DEMO](https://offwork.github.io/argus-demo/)
 
 ## for dependencies
 ```
